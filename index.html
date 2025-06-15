@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peluquería Nizar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: #1e1e1e;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #00c8ff; }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .services, .gallery, .team {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .info {
+      text-align: center;
+      line-height: 1.8;
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    a { color: #007bff; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float i { vertical-align: middle; }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Peluquería Nizar</h1>
+  <p>Estilo, confianza y calidad en Burlada, Navarra</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#galeria">Galería</a>
+  <a href="#precios">Precios</a>
+  <a href="#equipo">Equipo</a>
+  <a href="#opiniones">Opiniones</a>
+  <a href="#reservas">Reservas</a>
+  <a href="#horarios">Horarios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#ubicacion">Ubicación</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenidos</h2>
+  <p class="info">Peluquería especializada en cortes modernos, afeitados, degradados y color. Nuestro compromiso es dejarte impecable.</p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="grid services">
+    <div class="card"><h3>Corte clásico</h3><p>Precisión y elegancia.</p></div>
+    <div class="card"><h3>Corte moderno</h3><p>Fade, diseño, estilo actual.</p></div>
+    <div class="card"><h3>Afeitado navaja</h3><p>Tradición con toallas calientes.</p></div>
+    <div class="card"><h3>Tinte</h3><p>Color profesional y vibrante.</p></div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="grid gallery">
+    <div class="card"><img src="https://via.placeholder.com/300x200?text=Corte+1" alt=""></div>
+    <div class="card"><img src="https://via.placeholder.com/300x200?text=Corte+2" alt=""></div>
+    <div class="card"><img src="https://via.placeholder.com/300x200?text=Corte+3" alt=""></div>
+    <div class="card"><img src="https://via.placeholder.com/300x200?text=Corte+4" alt=""></div>
+  </div>
+</section>
+
+<section id="precios">
+  <h2>Precios</h2>
+  <div class="info">
+    <p>Corte clásico: <strong>10 €</strong></p>
+    <p>Moderno con diseño: <strong>12 €</strong></p>
+    <p>Afeitado: <strong>6 €</strong></p>
+    <p>Tinte: <strong>15+ €</strong></p>
+  </div>
+</section>
+
+<section id="equipo">
+  <h2>Equipo</h2>
+  <div class="grid team">
+    <div class="card"><img src="https://via.placeholder.com/200?text=Barbero+1" alt=""><h3>Nizar</h3><p>Fundador & Estilista</p></div>
+    <div class="card"><img src="https://via.placeholder.com/200?text=Barbero+2" alt=""><h3>Ali</h3><p>Especialista en Fade</p></div>
+  </div>
+</section>
+
+<section id="opiniones">
+  <h2>Opiniones</h2>
+  <div class="info">
+    <p>⭐️⭐️⭐️⭐️⭐️ “Gran atención y profesionalidad.”</p>
+    <p>⭐️⭐️⭐️⭐️⭐️ “Los mejores cortes de Burlada.”</p>
+  </div>
+</section>
+
+<section id="reservas">
+  <h2>Reservas</h2>
+  <div class="info">
+    <p>Reserva tu cita por WhatsApp o llámanos directamente:</p>
+    <p><a href="https://wa.me/34617114121" target="_blank">📲 WhatsApp 617 11 41 21</a></p>
+    <p><a href="tel:+34617114121">📞 Llamar ahora</a></p>
+  </div>
+</section>
+
+<section id="horarios">
+  <h2>Horarios</h2>
+  <div class="info">
+    <p><strong>Lunes a Viernes:</strong> 9:30–13:30 / 16:00–20:00</p>
+    <p><strong>Sábado:</strong> 9:30–14:00</p>
+    <p><strong>Domingo:</strong> Cerrado</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <div class="info">
+    <p>📍 Dirección: C. Hilarión Eslava, 4, 31600 Burlada, Navarra</p>
+    <p>📞 <a href="tel:+34617114121">617 11 41 21</a></p>
+    <p>📧 <a href="mailto:contacto@peluquerianizar.com">contacto@peluquerianizar.com</a></p>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <h2>Ubicación</h2>
+  <div class="info">
+    <p>Aquí nos puedes encontrar:</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.110460984343!2d-1.617!3d42.825"
+      loading="lazy" referrer
